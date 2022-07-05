@@ -1,11 +1,25 @@
+// let promise = new Promise((resolve, reject)=>{
+//     let value = 'water';
+//     resolve(value);
+// });
+
+// const grandparentcooking = () =>{
+//     promise.then((result)=>{
+//         console.log(result);
+//     })
+// };
+
+// grandparentcooking();
+
 let promise = new Promise((resolve, reject)=>{
-    let value = 'water';
-    resolve(value);
+   setTimeout(()=>{
+        reject(new Error('jack felled'));
+   }, 2000)
 });
 
 const grandparentcooking = () =>{
-    promise.then((result)=>{
-        console.log(result);
+    promise.catch((error)=>{
+        console.log(error.message);
     })
 };
 
