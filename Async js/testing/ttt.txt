@@ -1,0 +1,25 @@
+clearTimeout( ) function has stopped the execution of setTimeout( ) function.
+
+To stop the setInterval function, we use the clearInterval function.
+
+function sayHello() {
+    console.log("Hello world!");
+}
+function stopTimer() {
+    clearTimeout(id);
+}
+const id = setTimeout(sayHello, 2000);
+console.log("This should be executed first");
+stopTimer();
+
+///////////////
+
+var count = 1;
+function sayHelloWorld() {
+    console.log("Hello World!");
+    count = count+1;
+    if(count == 6) {
+        clearInterval(id);
+    }
+}
+let id = setInterval(sayHelloWorld, 2000);
