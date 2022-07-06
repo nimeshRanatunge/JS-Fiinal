@@ -1,0 +1,51 @@
+A Map holds key-value pairs where the keys can be any datatype.
+
+new Map()	Creates a new Map object
+set()	Sets the value for a key in a Map
+get()	Gets the value for a key in a Map
+clear()	Removes all the elements from a Map
+delete()	Removes a Map element specified by a key
+has()	Returns true if a key exists in a Map
+
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+keys, values
+
+// Create a Map
+const fruits = new Map();
+
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+The set() method can also be used to change existing Map values:
+
+Example
+fruits.set("apples", 500);
+
+he get() method gets the value of a key in a Map:
+
+Example
+fruits.get("apples");
+
+The size property returns the number of elements in a Map:
+
+Example
+fruits.size;
+
+The delete() method removes a Map element:
+
+Example
+fruits.delete("apples");
+
+The clear() method removes all the elements from a Map:
+
+Example
+fruits.clear();
+
+entries(), keys(), values()
