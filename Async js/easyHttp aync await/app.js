@@ -6,7 +6,7 @@ const http = new easyHttp;
 // .catch(err => console.log(err));
 // ;
 
-//user data
+// user data post
 
 // const data = {
 //     name: 'Nimesh ranatunge',
@@ -18,14 +18,20 @@ const http = new easyHttp;
 // .then(data => console.log(data))
 // .catch(err => console.log(err));
 
-//update data
-const data = {
-    name: 'Samsuung',
-    username: 'samsung56',
-    email: 'nimeshcharu@gmail.com'
-}
+// update data
+// const data = {
+//     name: 'Samsuung',
+//     username: 'samsung56',
+//     email: 'nimeshcharu@gmail.com'
+// }
 
 
-http.put('https://jsonplaceholder.typicode.com/users/2', data)
+// http.put('https://jsonplaceholder.typicode.com/users/3', data)
+// .then(data => console.log(data))
+// .catch(err => console.log(err));
+
+//delete data
+
+http.delete('https://jsonplaceholder.typicode.com/users/5')
 .then(data => console.log(data))
 .catch(err => console.log(err));
